@@ -34,3 +34,5 @@ copyFolderRecursiveSync(
 );
 
 Fs.copyFileSync("./out/presentations.html", "./out/presentations/index.html");
+
+Fs.writeFileSync("./out/.nojekyll", "");
