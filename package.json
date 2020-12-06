@@ -1,0 +1,24 @@
+{
+  "name": "ulrikstrid.github.io",
+  "version": "1.0.0",
+  "description": "My site",
+  "main": "index.js",
+  "repository": "https://github.com/ulrikstrid/ulrikstrid.github.io",
+  "author": "Ulrik Strid",
+  "license": "BSD3",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@marp-team/marpit": "^1.6.3",
+    "next": "^10.0.3",
+    "nextra": "^0.3.1",
+    "nextra-theme-blog": "^0.1.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

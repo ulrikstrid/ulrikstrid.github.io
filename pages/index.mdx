@@ -1,0 +1,83 @@
+---
+type: page
+title: About
+date: 2020-01-01
+---
+
+# Ulrik Strid
+
+My name is Ulrik Strid, I'm a "full stack" developer from Sweden. Currently in a DevOps role working on everything from CI/CD and docker setup to backend and frontend services and up to architecture. I like open source and try to contribute where I can. My current focus on OSS has been to fill in gaps in web development using OCaml. I am one of 20 or so people to have built and certified a OpenID connect client.
+
+---
+
+## CV
+
+<details><summary children="Work experience"/>
+
+From most recent (current) to least recet
+
+- Xenit - As the first developer I've had a very varied role where I've doe everything from arcitecture to implementation of minor tools and automations and working with kubernetes.
+- Sigma, MyTeam - Developer consultant leading frontend development.
+  - I was in the "architect group" where we discussed architecture for the different projects we worked on and decided on technology we wanted to use going forward.
+  - We did multiple "lunch and learns" where I talked about everything from React to ReasonML
+- Sigma, Maverick - Developer consultant and tech lead of different projects
+- Viskan distanshandel - Building e-commerce frontends for large customers in Sweden
+
+## Projects
+
+- Building and architecting the frontend and backend of a research tool in a small team of 2 developers.
+  - We needed to build an image manipulation tool and ended up using WebGL which was challenging and needed a lot of RnD to land on.
+  - The other big challenge was that we needed to do a lot of matrix calculations in the browser while still being responsive
+- Designing (code) and implementing a OpenID connect provider for Swedish and Norwegian BankID.
+- Created a customer portal with a very extendable arcitecture based on microservices.
+  - It uses a GraphQL API to expose data to the client(s) and a mix of REST and gRPC to talk between services.
+  - We're continually extending it with new services for both internal and external needs
+- Lead developer/arcitecht for the the "control plane" of a security focused project to protect connected devices via "zero trust"
+  - It's a fast moving project with a lot of moving parts which forces us to build a flexible platform
+  - We're using MQTT heavily to talk to both the secure devices and the clients
+  - We're leveraging the JOSE spec to create signed and encrypted messages depending on how much privacy is eneded
+- Porting Lwt Unix from libev and "custom" C code to use libuv
+  - I got the possibility to get fundign via The OCaml Software Foundation to work on Lwt
+
+</details>
+
+<details><summary children="Skills"/>
+
+### Languages
+
+- OCaml / Reason
+- TypeScript / JavaScript
+
+### Others
+
+- Good knowledge of OpenID connect and related specs (JOSE, OAuth2)
+- Software arcitecture
+- Developing for Kubernetes
+  - Docker
+  - Manifests
+  - Helm
+  - Kubectl and debuging issues with it
+
+</details>
+<details><summary children="Open Source"/>
+
+My most recent and noteable open source work has been in OCaml and Reason
+
+### My projects
+
+- OIDC - Certified OpenID connect client implementation and base library
+- JOSE - JavaScript Object Signing and Encryption, JWT, JWE and JWK
+- Cookie - Parsing and printing Cookies for web servers
+- Morph - A web framework
+- redemon - A filewatcher and command runner, nodemon replacement
+- reenv - A very fast dotenv replacement
+
+### Noteworthy contributions
+
+- Lwt
+  - libuv engine
+  - Start porting Lwt.Unix to use libuv
+- Esy / Reason ecosystem
+  - I have spent a lot of time setting up good CI/CD with Azure Pipelinens (and to some extent Github Actions) for esy projects that is used a lot in the Reason community
+
+</details>
